@@ -19,7 +19,7 @@ private RepositoryRestConfiguration restConfiguration;
 	}
 	@Override
 	public void run(String... args) throws Exception {
-		restConfiguration.exposeIdsFor(Film.class);
+		restConfiguration.exposeIdsFor(Film.class,Salle.class);
 		cinemaInitService.initVilles();
 		cinemaInitService.initCinemas();
 		cinemaInitService.initSalles();
